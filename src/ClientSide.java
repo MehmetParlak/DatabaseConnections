@@ -20,7 +20,7 @@ public class ClientSide {
 		/*String serverAddress = JOptionPane
 				.showInputDialog("Enter IP Address of a machine that is\n" + "running the date service on port 9090:");
 		Socket s = new Socket(serverAddress, 9090);*/
-		String serverAddress="192.169.X.X";
+		String serverAddress="192.168.X.X";
 		Socket s= new Socket(serverAddress,9090);
 		BufferedReader input = new BufferedReader(new InputStreamReader(s.getInputStream()));
 		String answer = input.readLine();
